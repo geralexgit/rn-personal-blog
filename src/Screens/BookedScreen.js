@@ -12,7 +12,6 @@ export const BookedScreen = ({ navigation }) => {
       booked: post.booked,
     })
   }
-
   return (
     <PostList
       data={DATA.filter((post) => post.booked)}
@@ -21,17 +20,17 @@ export const BookedScreen = ({ navigation }) => {
   )
 }
 
-BookedScreen.navigationOptions = {
-  headerTitle: 'Booked',
+BookedScreen.navigationOptions = ({ navigation }) => ({
+  headerTitle: 'About app',
   headerLeft: () => {
     return (
       <HeaderButtons HeaderButtonComponent={AppHeaderIcon}>
         <Item
           title="Toggle drawer"
           iconName="ios-menu"
-          onPress={() => console.log('Press photo')}
+          onPress={() => navigation.toggleDrawer()}
         />
       </HeaderButtons>
     )
   },
-}
+})
