@@ -3,7 +3,7 @@ import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 import { AppLoading } from 'expo'
 
-import { AppNavigation } from './src/Navigation/AppNavigation'
+import { AppNavigation } from './src/navigation/AppNavigation'
 import { bootstrap } from './src/bootstrap'
 
 export default function App() {
